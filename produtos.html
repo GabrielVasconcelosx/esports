@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E Sports</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+</head>
+<body>
+
+<div class="bg-primary">
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">E <b>Sports</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+        </ul>
+        <a  class="btn btn-light" data-toggle="modal" data-target="#price">
+          <i class="fas fa-shopping-cart"></i> <span class="badge badge-light cart">0</span>
+        </a>
+        
+      </div>
+    </nav>
+</div>
+
+
+
+<div class="parallax mb-5"></div>
+
+<div class="container">
+    <h1>Tenis</h1>
+    <hr>
+<div class="row">
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap p-2 text-primary btn-zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/download.jpeg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-image="images/download.jpeg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>
+                </div>               
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Adidas</h4>
+                        <p class="desc">Confortavel e Estiloso</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">10 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary  text-white float-right btn-add" data-price="180" data-title="Adidas" ><i class="fas fa-cart-plus"></i></a>	
+                    
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 180,00</span> <del class="price-old">R$ 200,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap" style="background-size:cover;backgorund-position:center;background-image: url(images/nike.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-target="#" data-image="images/nike.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Nike SB</h4>
+                        <p class="desc">Ideal para seu role de skate</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">Mais 200 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                        <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="280" data-title="Nike Sb" ><i class="fas fa-cart-plus"></i></a>	
+                        <div class="price-wrap h5">
+                            <span class="price-new">R$ 280,00</span> <del class="price-old">R$ 300,00</del>
+                        </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product zoom">
+                <div class="img-wrap zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/vans.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom"  data-image="images/vans.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Vans</h4>
+                        <p class="desc">O tenis que esta na moda</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="100" data-title="Vans" ><i class="fas fa-cart-plus"></i></a>	
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 100,00</span> <del class="price-old">R$ 150,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h1>Camisa de Time</h1>
+    <hr>
+<div class="row">
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap p-2 text-primary btn-zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/spfc.jpeg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-image="images/spfc.jpeg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>
+                </div>               
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Camisa SPFC</h4>
+                        <p class="desc">O maior time do mundo</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">10 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary  text-white float-right btn-add" data-price="300" data-title="Camisa SPFC" ><i class="fas fa-cart-plus"></i></a>	
+                    
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 300,00</span> <del class="price-old">R$ 350,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap" style="background-size:cover;backgorund-position:center;background-image: url(images/palmeiras.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-target="#" data-image="images/palmeiras.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title"> Camisa do Palmeiras </h4>
+                        <p class="desc">Ainda nao tem Mundial</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">Mais 200 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                        <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="280" data-title="Camisa do Palmeiras" ><i class="fas fa-cart-plus"></i></a>	
+                        <div class="price-wrap h5">
+                            <span class="price-new">R$ 280,00</span> <del class="price-old">R$ 300,00</del>
+                        </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product zoom">
+                <div class="img-wrap zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/santos.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom"  data-image="images/santos.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Camisa do Santos FC</h4>
+                        <p class="desc">A torcida jovem mais velha</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="100" data-title="Camisa do Santos FC" ><i class="fas fa-cart-plus"></i></a>	
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 100,00</span> <del class="price-old">R$ 150,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+    </div>
+</div>
+
+
+<div class="container">
+    <h1>Suplementos</h1>
+    <hr>
+<div class="row">
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap p-2 text-primary btn-zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/baunilha.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-image="images/baunilha.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>
+                </div>               
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Whey Baunilha</h4>
+                        <p class="desc">Sabor baunilha</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">10 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary  text-white float-right btn-add" data-price="100" data-title="Whey Baunilha" ><i class="fas fa-cart-plus"></i></a>	
+                    
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 100,00</span> <del class="price-old">R$ 130,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product">
+                <div class="img-wrap" style="background-size:cover;backgorund-position:center;background-image: url(images/whey.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom" data-target="#" data-image="images/whey.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title"> Whey Menta</h4>
+                        <p class="desc">Resfresca seu Treino</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">Mais 200 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                        <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="120" data-title="Whey Menta" ><i class="fas fa-cart-plus"></i></a>	
+                        <div class="price-wrap h5">
+                            <span class="price-new">R$ 120,00</span> <del class="price-old">R$ 170,00</del>
+                        </div> 
+                </div> 
+            </figure>
+        </div> 
+        <div class="col-md-4">
+            <figure class="card card-product zoom">
+                <div class="img-wrap zoom" style="background-size:cover;backgorund-position:center;background-image: url(images/banana.jpg);width:100%; height: 300px;">
+                    <button class="btn text-primary btn-zoom" data-toggle="modal" id="btn-zoom"  data-image="images/banana.jpg"> <i class="fas fa-search" style="right: 10;top:10; position: absolute;"></i></button>                
+                </div>
+                <figcaption class="info-wrap p-3">
+                        <h4 class="title">Whey Banana</h4>
+                        <p class="desc">Para quem gosta de Banana</p>
+                        <div class="rating-wrap">
+                            <div class="label-rating">132 views</div>
+                            <div class="label-rating">154 compras </div>
+                        </div> 
+                </figcaption>
+                <div class="bottom-wrap p-3">
+                    <a class="btn btn-sm btn-primary text-white float-right btn-add" data-price="80" data-title="Whey Banana" ><i class="fas fa-cart-plus"></i></a>	
+                    <div class="price-wrap h5">
+                        <span class="price-new">R$ 80,00</span> <del class="price-old">R$ 150,00</del>
+                    </div> 
+                </div> 
+            </figure>
+        </div> 
+    </div>
+</div>
+
+      
+
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body img-zoom text-center" >
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="price" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content p-5">
+              <div class="modal-body img-zoom text-center" >
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Produto</th>
+                      <th>Preço</th>
+                      <th>Ação</th>
+                    </tr>
+                    <tbody id="produtos">
+
+                    
+                    </tbody>
+                  </thead>
+                </table>
+              </div>
+              <div>
+                  <div class="col-md-12 order-md-1">
+                      <h4 class="mb-3">Endereço de cobrança</h4>
+                      <form class="needs-validation" novalidate="">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="primeiroNome">Nome</label>
+                            <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              É obrigatório inserir um nome válido.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                              É obrigatório inserir um sobre nome válido.
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="nickname">Nickname</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="nickname" placeholder="Nickname" required="">
+                            <div class="invalid-feedback" style="width: 100%;">
+                              Seu nickname é obrigatório.
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                          <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+                          <div class="invalid-feedback">
+                            Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                          </div>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="endereco">Endereço</label>
+                          <input type="text" class="form-control" id="endereco" placeholder="Rua dos bobos, nº 0" required="">
+                          <div class="invalid-feedback">
+                            Por favor, insira seu endereço de entrega.
+                          </div>
+                        </div>
+            
+                        <div class="mb-3">
+                          <label for="endereco2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
+                          <input type="text" class="form-control" id="endereco2" placeholder="Apartamento ou casa">
+                        </div>
+            
+                        <div class="row">
+                          <div class="col-md-5 mb-3">
+                            <label for="pais">País</label>
+                            <select class="custom-select d-block w-100" id="pais" required="">
+                              <option value="">Escolha...</option>
+                              <option>Brasil</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Por favor, escolha um país válido.
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="estado">Estado</label>
+                            <select class="custom-select d-block w-100" id="estado" required="">
+                              <option value="">Escolha...</option>
+                              <option>Acre</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Por favor, insira um estado válido.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="cep">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              É obrigatório inserir um CEP.
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="mesmo-endereco">
+                          <label class="custom-control-label" for="mesmo-endereco">Endereço de entrega é o mesmo que o de cobrança.</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="salvar-info">
+                          <label class="custom-control-label" for="salvar-info">Lembrar desta informação, na próxima vez.</label>
+                        </div>
+                        <hr class="mb-4">
+            
+                        <h4 class="mb-3">Pagamento</h4>
+            
+                        <div class="d-block my-3">
+                          <div class="custom-control custom-radio">
+                            <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                            <label class="custom-control-label" for="credito">Cartão de crédito</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="debito">Cartão de débito</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="cc-nome">Nome no cartão</label>
+                            <input type="text" class="form-control" id="cc-nome" placeholder="" required="">
+                            <small class="text-muted">Nome completo, como mostrado no cartão.</small>
+                            <div class="invalid-feedback">
+                              O nome que está no cartão é obrigatório.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="cc-numero">Número do cartão de crédito</label>
+                            <input type="text" class="form-control" id="cc-numero" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              O número do cartão de crédito é obrigatório.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3 mb-3">
+                            <label for="cc-expiracao">Data de expiração</label>
+                            <input type="text" class="form-control" id="cc-expiracao" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Data de expiração é obrigatória.
+                            </div>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback">
+                              Código de segurança é obrigatório.
+                            </div>
+                          </div>
+                        </div>                        
+                      </form>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-success btn-finish">Finalizar a compra</button>
+                <button type="button" class="btn btn-secondary" id="closeprice" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <footer class="bg-primary text-white mt-5 p-5 text-center">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1>E Sports </h1>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <p>  Todos os direitos reservados a E Sports</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="mensagens" data-width="" data-height="" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3&appId=2930293976995937&autoLogAppEvents=1"></script>
+      
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/carrinho.js"></script>
+</body>
+</html>
